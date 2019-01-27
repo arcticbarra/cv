@@ -1,0 +1,87 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('../images/corkboard.jpg') repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#paper {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-5deg);
+  background: url('../images/paper.jpeg') repeat;
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  box-shadow: 5px 5px 5px black;
+}
+
+#photo-container {
+  width: 300px;
+  align-self: center;
+  margin: 10px;
+}
+
+#photo {
+  width: 100%;
+  height: auto;
+  border: 3px solid #424242;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.proyect-title {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.proyect-label {
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.proyect-content {
+  display: block;
+  font-size: 1em;
+  color: #424242;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #424242;
+}
+
+.no-strong {
+  font-weight: 500;
+  color: #424242;
+}
