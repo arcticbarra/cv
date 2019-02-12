@@ -858,6 +858,146 @@
           "winner_id": 1
         }
       ]
+    },
+    {
+      "field": "LATIN",
+      "field_id": 11,
+      "description": "",
+      "categories": [
+        {
+          "category_name": "Best Latin Pop Album",
+          "description": "For albums containing at least 51% playing time of new Latin pop recordings.",
+          "nominees": [
+            {
+              "nominee": "PROMETO",
+              "artist": "Pablo Alboran",
+              "info": ""
+            },
+            {
+              "nominee": "SINCERA",
+              "artist": "Claudia Brant",
+              "info": ""
+            },
+            {
+              "nominee": "MUSAS (UN HOMENAJE AL FOLCLORE LATINOAMERICANO EN MANOS DE LOS MACORINOS), VOL. 2",
+              "artist": "Natalia Lafourcade",
+              "info": ""
+            },
+            {
+              "nominee": "2:00 AM",
+              "artist": "Raquel Sofía",
+              "info": ""
+            },
+            {
+              "nominee": "VIVES",
+              "artist": "Carlos Vives",
+              "info": ""
+            }
+          ],
+          "winner_id": 1
+        },
+        {
+          "category_name": "Best Latin Rock, Urban or Alternative Album",
+          "description": "For albums containing at least 51% playing time of new Latin rock, urban or alternative recordings.",
+          "nominees": [
+            {
+              "nominee": "CLAROSCURA",
+              "artist": "Aterciopelados",
+              "info": ""
+            },
+            {
+              "nominee": "COASTCITY",
+              "artist": "COASTCITY",
+              "info": ""
+            },
+            {
+              "nominee": "ENCANTO TROPICAL",
+              "artist": "Monsieur Periné",
+              "info": ""
+            },
+            {
+              "nominee": "GOURMET",
+              "artist": "Orishas",
+              "info": ""
+            },
+            {
+              "nominee": "AZTLÁN",
+              "artist": "Zoé",
+              "info": ""
+            }
+          ],
+          "winner_id": 4
+        },
+        {
+          "category_name": "Best Regional Mexican Music Album (Including Tejano)",
+          "description": "For albums containing at least 51% playing time of new regional Mexican (banda, norteño, corridos, gruperos, mariachi, ranchera and Tejano) recordings.",
+          "nominees": [
+            {
+              "nominee": "PRIMERO SOY MEXICANA",
+              "artist": "Angela Aguilar",
+              "info": ""
+            },
+            {
+              "nominee": "MITAD Y MITAD",
+              "artist": "Calibre 50",
+              "info": ""
+            },
+            {
+              "nominee": "TOTALMENTE JUAN GABRIEL VOL. II",
+              "artist": "Aida Cuevas",
+              "info": ""
+            },
+            {
+              "nominee": "CRUZANDO BORDERS",
+              "artist": "Los Texmaniacs",
+              "info": ""
+            },
+            {
+              "nominee": "LEYENDAS DE MI PUEBLO",
+              "artist": "Mariachi Sol De Mexico De Jose Hernandez",
+              "info": ""
+            },
+            {
+              "nominee": "¡MÉXICO POR SIEMPRE!",
+              "artist": "Luis Miguel",
+              "info": ""
+            }
+          ],
+          "winner_id": 5
+        },
+        {
+          "category_name": "Best Tropical Latin Album",
+          "description": "For albums containing at least 51% playing time of new tropical Latin recordings.",
+          "nominees": [
+            {
+              "nominee": "PA' MI GENTE",
+              "artist": "Charlie Aponte",
+              "info": ""
+            },
+            {
+              "nominee": "LEGADO",
+              "artist": "Formell Y Los Van Van",
+              "info": ""
+            },
+            {
+              "nominee": "ORQUESTA AKOKÁN",
+              "artist": "Orquesta Akokán",
+              "info": ""
+            },
+            {
+              "nominee": "PONLE ACTITUD",
+              "artist": "Felipe Peláez",
+              "info": ""
+            },
+            {
+              "nominee": "ANNIVERSARY",
+              "artist": "Spanish Harlem Orchestra",
+              "info": ""
+            }
+          ],
+          "winner_id": 4
+        }
+      ]
     }
   ]
 }
