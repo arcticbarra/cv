@@ -1,8 +1,12 @@
 const request = require('request');
 const creds = require('./credentials');
 
-const city_name = 'Monterrey, Nuevo Leon';
+let city_name = 'Monterrey, Nuevo Leon';
 
+if (process.argv.length === 3) {
+  city_name = process.argv[2];
+}
+console.log(`Cómo está el día en ${city_name}:`);
 request(`https://api.mapbox.com/geocoding/v5/mapbox.places/${city_name}.json?access_token=${creds.MAPBOX_TOKEN}&limit=1`,
   function (error, response, body) {
     const parsedBody = JSON.parse(body);
