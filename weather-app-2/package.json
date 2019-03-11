@@ -1,0 +1,25 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Sample weather app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcticbarra/web-class.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Enrique Barragan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcticbarra/web-class/issues"
+  },
+  "homepage": "https://github.com/arcticbarra/web-class#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}

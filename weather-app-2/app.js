@@ -38,4 +38,4 @@ function getLocation(city_name) {
 }
 
 
-getLocation(city_name).then((coords) => (getWeather(coords[0], coords[1]))).catch((err) => (console.log(err)));
+getLocation(city_name).then((coords) => (getWeather(coords[0], coords[1]))).catch((err) => (console.log("Hubo un error. Favor de revisar que las credenciales sean correctas y la ubicación también.")));
