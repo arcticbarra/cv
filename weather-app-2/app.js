@@ -2,18 +2,23 @@ const request = require('request');
 const creds = require('./credentials');
 
 let city_name = 'Monterrey, Nuevo Leon';
+const errorMsg = "Hubo un error al procesar el clima.\nFavor de revisar lo siguiente: \n- Las credenciales sean correctas\n- Conexión a internet\n- La ubicación ingresada sea válida";
 
 if (process.argv.length === 3) {
   city_name = process.argv[2];
 }
-console.log(`Cómo está el día en ${city_name}:`);
 
 function getWeather(longitude, latitude) {
   request(`https://api.darksky.net/forecast/${creds.DARK_SKY_SECRET_KEY}/${latitude},${longitude}?units=si&lang=es`,
     function (error, response, body) {
-      const parsedBody = JSON.parse(body);
-      const dailyData = parsedBody.daily.data[0];
-      console.log(`${dailyData.summary} Actualmente está a ${parsedBody.currently.temperature}°C. Hay ${dailyData.precipProbability * 100}% de posibilidad de lluvia.`);
+      if (error) {
+        console.log(errorMsg);
+      } else {
+        const parsedBody = JSON.parse(body);
+        const dailyData = parsedBody.daily.data[0];
+        console.log(`Cómo está el día en ${city_name}:`);
+        console.log(`${dailyData.summary} Actualmente está a ${parsedBody.currently.temperature}°C. Hay ${dailyData.precipProbability * 100}% de posibilidad de lluvia.`);
+      }
     }
   )
 }
@@ -39,5 +44,5 @@ function getLocation(city_name) {
 
 
 getLocation(city_name).then((coords) => (getWeather(coords[0], coords[1]))).catch((err) => (
-  console.log("Hubo un error al procesar el clima. Favor de revisar que las credenciales sean correctas, estés conectado al internet y la ubicación sea válida.")
+  console.log(errorMsg)
 ));
