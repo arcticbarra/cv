@@ -15,7 +15,6 @@ app.get('/weather', async (req, res, next) => {
     const weather = await getLocation(city_name).then((data) => (getWeather(data.coords[0], data.coords[1], data.city))).catch((err) => (
       { error: errorMsg }
     ));
-    console.log(weather);
     res.json(weather);
   } else {
     res.json({ error: 'No se especificó una ciudad.' })
