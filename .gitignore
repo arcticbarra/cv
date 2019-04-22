@@ -4,3 +4,5 @@ weather-app-2/node_modules/
 weather-app-2/credentials.js
 weather-server/node_modules/
 weather-server/credentials.js
+crud/node_modules/
+crud/config.js
